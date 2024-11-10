@@ -47,7 +47,7 @@ function displaySkills() {
         // Create and append the icon
         const iconDiv = document.createElement('div');
         const img = document.createElement('img');
-        img.src = `../image/Icons/${skill.icon}`;
+        img.src = `./image/Icons/${skill.icon}`;
         img.alt = skill.appName;
         img.style.width = '50px'; 
         iconDiv.appendChild(img);
