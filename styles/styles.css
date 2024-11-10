@@ -26,8 +26,8 @@ body {
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--off-white);
-    padding: 0 5rem;
+    background-color: var(--white);
+    padding: 1rem 5rem;
     
 }
 
@@ -49,9 +49,11 @@ header {
     font-size: 1.2rem;
 }
 a {
- text-decoration: none;
- color: var(--black400);
- transition: .3s ease;
+    text-decoration: none;
+    color: var(--black400);
+    transition: .3s ease;
+    cursor: pointer;
+
 }
 nav{
     display: flex;
@@ -152,7 +154,7 @@ nav a:hover {
     gap: 2rem;
 }
 .pic-container img,
-.pic-container .text-field {
+.pic-container .text-field.bar {
     width: 50%;
     height: auto;
     display: flex;
@@ -164,7 +166,7 @@ nav a:hover {
     height: auto;
     object-fit: cover; 
 }
-.dev-img {
+.dev-img, .aboutMe-img {
     display: block;
     position: relative;
 }
@@ -174,9 +176,9 @@ nav a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 80px; /* Adjust the height of the fade effect */
+    height: 80px; 
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 90%);
-    pointer-events: none; /* Ensure it doesn't interfere with clicks */
+    pointer-events: none;
 }
 .icon-field {
     display: flex;
@@ -338,6 +340,7 @@ nav a:hover {
         font-size: .8rem;
     }
     
+    
 }
 
 @media (max-width: 480px) {
@@ -398,12 +401,12 @@ nav a:hover {
         display: block;
     }
     
-    .pic-container .text-field {
+    .pic-container .text-field, .aboutMe-txt p {
         width: 90%;
     }
 
     nav {
-        padding: 1rem 0;
+        padding: 2rem 0;
         position: absolute;
         left: 0;
         right: 0;
@@ -412,7 +415,7 @@ nav a:hover {
         width: 100%;
         text-align: center;
         transition: top 0.5s ease-in-out;
-        z-index: 5;
+        z-index: 4;
         background-color: #1f1f1fab;
         gap: 1rem;
     }

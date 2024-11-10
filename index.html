@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <script defer src="script/homePage.js"></script>
-    <script defer src="script/value.js"></script>
+    <link rel="stylesheet" href="styles/aboutMe.css">
+    <link rel="stylesheet" href="styles/scrollingEffects.css">
+    <script defer src="script/hoverFunction.js"></script>
+    <script defer src="script/stringsAndvalues.js"></script>
+    <script defer src="script/aboutMe.js"></script>
     <title>Home Page</title>
 </head>
 <body>
@@ -14,7 +17,7 @@
             <a href="#">Robert.</a>
         </div>
         <nav>
-            <a href="#">About</a>
+            <a onclick="clickEffects()">About</a>
             <a href="#">Contact</a>
             <a href="#">Others</a>
         </nav>
@@ -26,7 +29,7 @@
     </header>
     <div class="main-container">
         <div class="pic-container">
-            <div class="image-field">
+            <div class="image-field box">
                 <div class="dev-img">
                     <img src="image/MyDp.png" alt="myImg">
                 </div>
@@ -49,15 +52,19 @@
                     </div>
                 </div>
             </div>
-            <div class="text-field">
+            <div class="text-field box">
                 <p><span class="greet"></span><span class="name"></span></br><span class="skills"></span></br>&nbsp;&nbsp;&nbsp;<span  class="paragraph"></span></p>
             </div>
         </div>
-        <button id="about-me" onclick="msg()">About Me</button>
+        <button id="about-me" onclick="clickEffects()">About Me</button>
     </div>
 
-    <div class="about-me">
-        
+    <div class="about-me box">
+        <div class="aboutMe-txt box" id="about-me">
+            <div class="aboutMe-txtfield box"></div>
+            <div class="card"></div>
+        </div>
+        <div class="aboutMe-img box"></div>
     </div>
 </body>
 </html>
