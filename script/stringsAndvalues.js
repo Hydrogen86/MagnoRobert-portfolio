@@ -22,4 +22,4 @@ document.querySelector('.aboutMe-txtfield').innerHTML = `
 <p><span class="greet">So, who am I? </span>${projectInfo[1].discription}</p></br>
 <h3>Languages I learned:</h3>
 `;
-document.querySelector('.aboutMe-img').innerHTML = `<img src='../image/${projectInfo[1].img}' alt='Developer Image'>`;
+document.querySelector('.aboutMe-img').innerHTML = `<img src='./image/${projectInfo[1].img}' alt='Developer Image'>`;
