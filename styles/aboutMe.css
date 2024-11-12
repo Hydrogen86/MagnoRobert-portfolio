@@ -10,7 +10,6 @@
     transition: max-height .8s ease, opacity .8s ease, transform .8s ease; 
 }
 .about-me.show {
-    max-height: 500px;
     display: block; 
     opacity: 1; 
     transform: translateY(0); 
