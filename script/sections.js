@@ -135,10 +135,10 @@ document.addEventListener('DOMContentLoaded', function(){
   const contact = document.getElementById('form-box');
   contact.innerHTML = `
       <div class="input-container">
-        <input type="text" class="input" placeholder="Your Name" required>
-        <input type="email" class="input" placeholder="Your@email.com" required>
+        <input type="text" class="input" placeholder="Your name" required>
+        <input type="email" class="input" placeholder="Your @email" required>
       </div>    
-      <textarea name="" id="message" class="input" placeholder="Message to me" required ></textarea>
+      <textarea name="" id="message" class="input" placeholder="Send us a message" required ></textarea>
       <button class="submit-btn">Submit</button>
   `;
 
