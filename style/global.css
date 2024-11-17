@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --XS-Fsize: 1rem;
+  --small-Fsize: 18px;
+  --medium-Fsize: 26px; 
+  --mobile-small-Fsize: 18px;
+  --mobile-large-Fsize: 42px;
+  --mobile-XL-Fsize:45px;
+
+  --desktop-small-Fsize: 24px;
+  --small-Fsize: 18px;
+  --medium-Fsize:1.6rem;
+  --desktop-large-Fsize: 4.375rem;
+  --desktop-XL-Fsize: 88px;
+
+  --primary-color: #EEEEEE;
+  --neutral-color: #222831;
+  --accent-color: #00ADB5;
+  --pastel-color: #393e46;
+
+  --black: #1d1d1ddf;
+
+  --poppins: 'Poppins', sans-serif;
+  --inter: 'Inter', sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+}
+
+html{
+  
+  scroll-behavior: smooth;
+  scroll-padding: var(--scroll-padding, 40px);
+}
+
+body{
+  background-color: var(--neutral-color);
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  padding-top: 0;/*4rem will change later*/
+}
+
+.main-wrapper{
+  --main-wrapper-max-width: 1100px;
+  --main-wrapper-padding: 10%;
+
+  width: min(var(--main-wrapper-max-width), 100% - var(--main-wrapper-padding));
+  margin-inline: auto;
+
+  display: none;
+}
+
+section{
+  margin-top: 10rem;
+}
+
+section .heading{
+  font-size: clamp(var(--mobile-XL-Fsize), 8vw, var(--desktop-XL-Fsize));
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 1rem; 
+  opacity: 0;
+}
+section .heading span{
+  color: var(--pastel-color)
+}
+
+@media(width >= 1000px){
+  main{
+    display: flex;
+    column-gap: 5rem;
+    padding-top: 8rem;
+  }
+
+  section:first-child{
+    margin-top: 0rem;
+  }
+
+  section .heading{
+    font-size: clamp(var(--mobile-XL-Fsize), 8vw, var(--desktop-XL-Fsize));
+    text-align: left;
+    line-height: 1em;
+    margin-bottom: 1rem; 
+  }
+
+}

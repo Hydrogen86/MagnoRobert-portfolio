@@ -1,0 +1,26 @@
+#second-page {
+    display: none;/*Block*/
+    color: black;
+    padding: 2rem 3rem;
+    width: 100%;
+    background-color: white;
+}
+.inner-box2 .second {
+    font-size: 1rem;
+    font-weight: 400;
+}
+.inner-box2 button {
+    margin-top: 2rem;
+    padding: .4rem 1rem;
+    cursor: pointer;
+}
+.inner-box2 button:hover {
+    background-color: #00acb578;
+    border: 2px solid gray;
+}
+.inner-box2 img {
+    width: 150px;
+}
+.inner-box2 .footer-second{
+    font-size: 1rem;
+}
