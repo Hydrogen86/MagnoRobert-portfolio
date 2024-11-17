@@ -26,10 +26,10 @@
 
 .profile-container .short-about-me{
   color: var(--pastel-color);
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
   opacity: 0.7;
-  line-height: 1.2em;
+  line-height: 1.2rem;
   animation: profile-about-entry 1.6s ease;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .profile-container .social-media-nav ul li a img{
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   max-width: 1.5rem;
   transition: transform 0.3s ease-in-out;
 }

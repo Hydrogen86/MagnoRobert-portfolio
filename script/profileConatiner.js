@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
    const resources = {
         img: "Dev_Image.png",
         Devname: "Robert Magno",
-        aboutMe: "Hi, I am Robert. Let's work together and create functional application and websites"
+        aboutMe: "Hi, I am Robert. Let's work together and create functional application and websites."
     };
     const icons = {
         facebook: "./images/icons/facebook.png",
@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', function(){
           <nav class="social-media-nav">
             <ul>
               <li>
-                <a href=""><img src="${icons.facebook}" alt="fb-icon"></a>        
+                <a href="https://www.facebook.com/profile.php?id=100008716215080&mibextid=ZbWKwL" target="_blank"><img src="${icons.facebook}" alt="fb-icon"></a>        
               </li>
               <li>
-                <a href=""><img src="${icons.instagram}" alt="insta-icon"></a>
+                <a href="https://www.instagram.com/rawbeehurt/profilecard/?igsh=MWxxZjZscjB1aWh5OA==" target="_blank"><img src="${icons.instagram}" alt="insta-icon" ></a>
               </li>
               <li>
-                <a href=""><img src="${icons.twitter}" alt="twitter-icon"></a>
+                <a href="#" target="_blank"><img src="${icons.twitter}" alt="twitter-icon"></a>
               </li>
               <li>
-                <a href=""><img src="${icons.whatsapp}" alt="twitter-icon"></a>
+                <a href="https://wa.me/639266495922" target="_blank"><img src="${icons.whatsapp}" alt="whatsapp-icon"></a>
               </li>
             </ul>
           </nav>
