@@ -38,3 +38,12 @@ h1 {
 .inner-box button:hover {
     background-color: #00acb578;
 }
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 84px;
+    }
+    p {
+        font-size: 1.8rem;
+    }
+}
