@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 <a href="https://www.instagram.com/rawbeehurt/profilecard/?igsh=MWxxZjZscjB1aWh5OA==" target="_blank"><img src="${icons.instagram}" alt="insta-icon" ></a>
               </li>
               <li>
-                <a href="none" target="_blank"><img src="${icons.twitter}" alt="twitter-icon"></a>
+                <a target="_blank"><img src="${icons.twitter}" alt="twitter-icon"></a>
               </li>
               <li>
                 <a href="https://wa.me/639266495922" target="_blank"><img src="${icons.whatsapp}" alt="whatsapp-icon"></a>
