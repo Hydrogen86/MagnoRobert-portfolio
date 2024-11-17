@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const icons = {
         facebook: "./images/icons/facebook.png",
         instagram: "./images/icons/instagram.png",
-        twitter: "./images/icons/twitter.png",
+        twitter: "./images/icons/tiktok.png",
         whatsapp: "./images/icons/whatsapp.png"
     }
 
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 <a href="https://www.instagram.com/rawbeehurt/profilecard/?igsh=MWxxZjZscjB1aWh5OA==" target="_blank"><img src="${icons.instagram}" alt="insta-icon" ></a>
               </li>
               <li>
-                <a target="_blank"><img src="${icons.twitter}" alt="twitter-icon"></a>
+                <a href="https://www.tiktok.com/@stewie.griffin841?_t=8rSnsZ9k7Tc&_r=1" target="_blank"><img src="${icons.twitter}" alt="tiktok-icon"></a>
               </li>
               <li>
                 <a href="https://wa.me/639266495922" target="_blank"><img src="${icons.whatsapp}" alt="whatsapp-icon"></a>
