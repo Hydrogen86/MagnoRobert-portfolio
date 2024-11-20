@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
-
+ export function sections(){
   const Data = [
     {
       discription: "I am a BS Information Technology student of Marinduque State University currently at 3rd year level persuing Software Development. Creating a functional and well secured websites is one of my speciality, so what's you waiting for let's team up!"
@@ -150,4 +149,4 @@ document.addEventListener('DOMContentLoaded', function(){
     <p class="footer-str">${Data[2].email}</p>
     <p class="footer-str">${Data[2].copyRights}</p>
   `;
-});
+};

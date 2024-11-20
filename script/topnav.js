@@ -21,6 +21,7 @@ export function topNav(){
 
             if(sectionClass === navClass){
               navIcon.classList.add('active');
+
             } else {
               navIcon.classList.remove('active');
             }        

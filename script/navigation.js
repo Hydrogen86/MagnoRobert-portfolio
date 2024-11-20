@@ -1,9 +1,9 @@
-document.addEventListener('DOMContentLoaded', function(){
+export function navigation(){
     const nav = document.getElementById('nav');
     nav.innerHTML = `
         <ul>
           <li class="nav home">
-            <a href="#section-container"><p>Home</p> <img class="nav-icon" src="./images/icons/home-icon.png" alt=""></a>
+            <a href="#profile-con"><p>Home</p> <img class="nav-icon" src="./images/icons/home-icon.png" alt=""></a>
           </li>
           <li class="nav about">
             <a href="#about-section"><p>About</p> <img class="nav-icon" src="./images/icons/about-icon.png" alt=""></a>
@@ -19,4 +19,4 @@ document.addEventListener('DOMContentLoaded', function(){
           <a href="#contact-section" id="let-connect-btn">Let's Connect</a>
     `;
     
-});
+};

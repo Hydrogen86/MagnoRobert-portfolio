@@ -30,6 +30,7 @@ const Data = [
   ];
 
 //Second Page
+//document.addEventListener('DOMContentLoaded', function(){secondPage();});
 export function secondPage(){
     const secondPage = document.getElementById('second-page');
 

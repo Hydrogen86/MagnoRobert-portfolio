@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     `;
 
     frontPageClick();
+    
 
 });
 
@@ -26,3 +27,4 @@ function frontPageClick(){
 
     
 }
+
