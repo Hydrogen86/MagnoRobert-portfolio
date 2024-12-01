@@ -1,10 +1,10 @@
  export function sections(){
   const Data = [
     {
-      discription: "I am a BS Information Technology student of Marinduque State University currently at 3rd year level persuing Software Development. Creating a functional and well secured websites is one of my speciality, so what's you waiting for let's team up!"
+      discription: "I am a third-year Bachelor of Science in Information Technology student at Marinduque State University, specializing in Software Development. Currently residing in the municipality of Gasan, province of Marinduque, I am passionate about creating functional and secure websites. Let's collaborate and bring amazing projects to life!"
     },
     {
-      exp1: "+2",
+      exp1: "+1",
       str1: "YEARS OF <br>EXPERIENCE<br>",
       exp2: "+3",
       str2: "PROJECTS <br> COMPLETED<br>",
@@ -22,6 +22,14 @@
   
   //About Me Discription
   document.querySelector('.more-about-me').innerHTML=Data[0].discription;
+
+  //iframe
+  document.getElementById('location').innerHTML = `
+    <div class="frame">
+      <h3>${Data[2].loaction}</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7765.126957705132!2d121.8494056406966!3d13.315186398130649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a33ae06bc1dc9b%3A0x7ce7866bfedffd30!2sMahunig%2C%20Gasan%2C%20Marinduque!5e0!3m2!1sen!2sph!4v1733072899190!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  `;
 
   //Years of Doing
   const YOD = document.getElementById('YOD');

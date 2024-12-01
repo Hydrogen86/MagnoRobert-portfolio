@@ -2,7 +2,7 @@ export function profile(){
    const resources = {
         img: "Dev_Image.png",
         Devname: "Robert Magno",
-        aboutMe: "Hi, I am Robert. Let's work together and create functional application and websites."
+        aboutMe: "Hi, I am Robert. A Web Designer and Application Developer"
     };
     const icons = {
         facebook: "./images/icons/facebook.png",

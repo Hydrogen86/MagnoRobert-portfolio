@@ -4,6 +4,11 @@
   font-size: clamp(3.125rem, 9vw, 6.25rem);
 }
 
+#location iframe{
+  margin-bottom: 3rem;
+  border-radius: 10px;
+}
+
 #about-section .more-about-me{
   font-size: var(--small-Fsize);
   color: var(--primary-color);
@@ -65,5 +70,10 @@
 
   .years-of-doing.d-grid .clients{
     grid-column: initial;
+  }
+}
+@media (max-width: 480px) {
+  #location iframe{
+    width: 100%;
   }
 }

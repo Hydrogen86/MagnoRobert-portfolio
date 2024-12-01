@@ -1,7 +1,9 @@
 const resources = {
     img: "Dev_Image.png",
+    greetings: "Hello there,",
     Devname: "Robert Magno",
-    aboutMe: "Hi, I am Robert. Let's work together and create functional application and websites"
+    aboutMe: "I am Robert. Let's work together and create functional application and websites",
+    tab: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
 };
 const icons = {
     facebook: "./images/icons/facebook.png",
@@ -11,12 +13,9 @@ const icons = {
 }
 const Data = [
     {
-      discription: "I am a BS Information Technology student of Marinduque State University currently at 3rd year level persuing Software Development. Creating a functional and well secured websites is one of my speciality, so what's you waiting for let's team up!"
-    },
-    {
-      exp1: "+2",
+      exp1: "+1",
       str1: "YEARS OF <br>EXPERIENCE <br>",
-      exp2: "+1",
+      exp2: "+3",
       str2: "PROJECTS <br> COMPLETED <br>",
       exp3: "+0",
       str3: "WORLDWIDE <br>CLIENTS <br>"
@@ -25,80 +24,95 @@ const Data = [
       devName: "Robert Magno",
       loaction: "Gasan Marinduque",
       email: "magno.robert@marsu.edu.ph",
-      copyRights: "@2024 Robert Dev | All Rights Reserved"
+      copyRights: "@2024 Robert Dev | All Rights Reserved",
+      discription: "I am a third-year Bachelor of Science in Information Technology student at Marinduque State University, specializing in Software Development. Currently residing in the municipality of Gasan, province of Marinduque, I am passionate about creating functional and secure websites. Let's collaborate and bring amazing projects to life!"
     }
+  ];
+  //Skill Container
+  const languages = [
+    { icon: "java.png", title: "Java" },
+    { icon: "php.png", title: "Php" },
+    { icon: "html.png", title: "HTML" },
+    { icon: "CSS.png", title: "CSS" },
+    { icon: "js.png", title: "JavaScript" },
+    { icon: "C Sharp.png", title: "C#" },
+    { icon: "python.png", title: "Python" }
+  ];
+  //Tools Container
+  const tools = [
+    {icon: "visual-studio.png", title: "VS code"},
+    {icon: "android studio.png", title: "Andriod Studio"},
+    {icon: "Git.png", title: "GIT"},
+    {icon: "xammp.png", title: "Xammp"},
+    {icon: "github (2).png", title: "GitHub"}
   ];
 
 //Second Page
-//document.addEventListener('DOMContentLoaded', function(){secondPage();});
-export function secondPage(){
+export function secondPage() {
     const secondPage = document.getElementById('second-page');
-
     secondPage.innerHTML = `
         <div class="inner-box2">
-            <nav>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Contacts</a>
-                <a href="">Services</a>
-            </nav>
             <h2>ABOUT ME</h2>
-            <img src="./images/${resources.img}" alt="" class="profile-pic">
-            <p class="second">${resources.Devname}</p>
-            <p class="second">${resources.aboutMe}</p><br>
-
-            <h2>Expriences</h2>
-            <span class="second">${Data[1].exp1} ${Data[1].str1}</span>
-            <span class="second">${Data[1].exp2} ${Data[1].str2}</span>
-            <span class="second">${Data[1].exp3} ${Data[1].str3}</span><br>
-
-            <div id="s-container">
-                <h2>SPECIALIZED SKILLS</h2>
-                <span class="second">Java<span>
-                <span class="second">PHP<span>
-                <span class="second">HTML<span>
-                <span class="second">CSS<span>
-                <span class="second">Javascript<span>
-                <span class="second">C#<span>
-                <span class="second">Python<span>
+            <div id="about-me-div">
+                <img src="./images/${resources.img}" alt="" class="profile-pic">
+                <p class="second ds">${Data[1].discription}</p><br>
             </div>
-            <div id="t-container">
-                <span class="second">VS code<span>
-                <span class="second">Andriod Studio<span>
-                <span class="second">Git<span>
-                <span class="second">Xammp<span>
-                <span class="second">GitHub<span>
-            </div><br>
-            <div id="D-project">
-                <h2>RECENT PROJECTS</h2>
-                <img src="./images/Projects/BikeZone.png" alt="project-icon" class="project-icon">
-                <p class="second">BikeZone Online Bike Selling</p>
-                <img src="./images/Projects/carabaoCart.png" alt="project-icon" class="project-icon">
-                <p class="second">Online Carabao Milks</p>
-                <img src="./images/Projects/FireSafe.png" alt="project-icon" class="project-icon">
-                <p class="second">Digital Fire Assistant</p>
+            <div id="div2">
+                <h2>Experiences</h2>
+                <div class="expriences">
+                    <p class="bottom"><span class="top">${Data[0].exp1}</span><br>${Data[0].str1}</p>
+                    <p class="bottom"><span class="top">${Data[0].exp2}</span><br>${Data[0].str2}</p>
+                    <p class="bottom"><span class="top">${Data[0].exp3}</span><br>${Data[0].str3}</p>
+                </div>
+                <div class="Skills">
+                    <h2>Specialized Skills</h2>
+                    <h3>Languages:</h3><hr>
+                     ${languages.map(language => `
+                        <div class="language-item">
+                            <img src="./images/icons/${language.icon}" alt="${language.title}">
+                            <p class="bottom">${language.title}</p>
+                        </div>
+                    `).join('')}
+                </div>
+                <div class="Skills">
+                    <h3>Tools:</h3><hr>
+                     ${tools.map(tool => `
+                        <div class="language-item">
+                            <img src="./images/icons/${tool.icon}" alt="${tool.title}">
+                            <p class="bottom">${tool.title}</p>
+                        </div>
+                    `).join('')}
+                </div>
             </div>
-            <div>
-                <form action="">
-                    <div class="input-container">
-                        <input type="text" class="input" placeholder="Your Name" required>
-                        <input type="email" class="input" placeholder="Your@email.com" required>
-                    </div>    
-                    <textarea name="" id="message" class="input" placeholder="Message to me" required ></textarea>
-                    <button">Submit</button>
-                </form>
-            </div>
-
-            <div>
-                <p class="second">${Data[2].devName}</p>
-                <p class="second">${Data[2].loaction}</p>
-                <p class="second">${Data[2].email}</p>
-                <p class="second">${Data[2].copyRights}</p>
-            </div>
-
-            <button id="second-btn">Show Design</button>
-
-            
+            <button id="first-btn">See more</button>
         </div>
     `;
+
+    let count = 0;
+    const firstBtn = document.getElementById('first-btn');
+    const divTwo = document.getElementById('div2');
+    const divSkills = document.querySelectorAll('.Skills');
+
+    firstBtn.addEventListener('click', function () {
+        divTwo.style.display = 'block';
+        divTwo.scrollIntoView({ behavior: 'smooth' });
+        count++;
+
+        if (count === 1) {
+            firstBtn.innerText = "Show Skills";
+        } else if (count === 2) {
+            divSkills.forEach(skill => skill.style.display = 'block'); // Fix NodeList manipulation
+            divSkills[0].scrollIntoView({ behavior: 'smooth' });
+            firstBtn.innerText = "View Design";
+        } else if (count > 2) {
+            const mainPage = document.getElementById('main-wrapper');
+            mainPage.style.display = 'block';
+            secondPage.style.display = 'none';
+            mainPage.scrollIntoView({ behavior: 'smooth' });
+            count = 0; // Reset counter for future toggles
+        }
+        console.log(count);
+    });
 }
+
+

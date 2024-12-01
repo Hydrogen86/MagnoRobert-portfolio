@@ -22,7 +22,7 @@ function frontPageClick(){
 
     firstBtn.addEventListener('click', function(){
         frontPage.style.display = 'none';
-        secondPage.style.display = 'Block';
+        secondPage.style.display = 'flex';
     });
 
     

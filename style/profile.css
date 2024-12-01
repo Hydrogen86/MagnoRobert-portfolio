@@ -12,11 +12,12 @@
 .profile-container .profile-pic{
   border-radius: 16px;
   margin-bottom: 1.5rem;
-  max-width: 26rem;
+  max-width: 28rem;
+  min-width: 18rem;
 }
 
 .profile-container .name{
-
+  text-align: center;
   color: var(--neutral-color);
   font-size: 2.50rem;
   line-height: 1em;
@@ -38,12 +39,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .profile-container .social-media-nav ul li a img{
   margin-top: 1.2rem;
-  max-width: 1.5rem;
+  max-width: 1.8rem;
   transition: transform 0.3s ease-in-out;
 }
 .profile-container .social-media-nav ul li a img:hover {
@@ -58,4 +59,10 @@
    width: 50rem;
    padding: 2.3rem 1.6rem;
    }
+ }
+
+ @media (width < 600px) {
+  .profile-container {
+    margin-top: 6rem;
+  }
  }
