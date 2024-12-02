@@ -136,7 +136,7 @@ textarea {
 /*Footer*/
 #footer{
     display: none;/*block*/
-    margin 3rem 0;
+    margin-bottom: 3rem;
 }
 #footer p {
     font-family: var(--inter);
