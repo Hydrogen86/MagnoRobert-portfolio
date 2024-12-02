@@ -1,6 +1,7 @@
 @import url('global.css');
 
 .profile-container{
+  min-height: 80vh;
   padding: 2.3rem 10%;
   border-radius: 16px;
   background-color: var(--primary-color);
@@ -10,11 +11,25 @@
 }
 
 .profile-container .profile-pic{
-  border-radius: 16px;
+  border-radius: 50%;
   margin-bottom: 1.5rem;
   max-width: 28rem;
-  min-width: 18rem;
+  min-width: 16rem;
+  animation: float 3s ease-in-out infinite;
+  transition: opacity 0.5s ease-in-out;
 }
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px); /* Moves up */
+  }
+  100% {
+      transform: translateY(0); /* Moves back down */
+  }
+}
+
 
 .profile-container .name{
   text-align: center;
@@ -28,6 +43,7 @@
 .profile-container .short-about-me{
   color: var(--pastel-color);
   font-size: 1rem;
+  text-align: center;
   font-weight: 600;
   opacity: 0.7;
   line-height: 1.2rem;
@@ -45,10 +61,10 @@
 .profile-container .social-media-nav ul li a img{
   margin-top: 1.2rem;
   max-width: 1.8rem;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .profile-container .social-media-nav ul li a img:hover {
-  transform: scale(1.4);
+  transform: scale(1.4) rotate(360deg);
 }
 
 @media(width >= 1000px){
