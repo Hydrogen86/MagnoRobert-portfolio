@@ -58,14 +58,14 @@ export function secondPage() {
                 <p class="second ds">${Data[1].discription}</p><br>
             </div>
             <div id="div2">
-                <h2>Experiences</h2>
+                <h2>EXPERIENCES</h2>
                 <div class="expriences">
                     <p class="bottom"><span class="top">${Data[0].exp1}</span><br>${Data[0].str1}</p>
                     <p class="bottom"><span class="top">${Data[0].exp2}</span><br>${Data[0].str2}</p>
                     <p class="bottom"><span class="top">${Data[0].exp3}</span><br>${Data[0].str3}</p>
                 </div>
                 <div class="Skills">
-                    <h2>Specialized Skills</h2>
+                    <h2>SPECIALIZED SKILLS</h2>
                     <h3>Languages:</h3><hr>
                      ${languages.map(language => `
                         <div class="language-item">
@@ -84,14 +84,36 @@ export function secondPage() {
                     `).join('')}
                 </div>
             </div>
+            <div id="contact-me">
+                <h2>LET'S WORK TOGETHER</h2>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email"><br>
+                    <textarea name="" id="message" class="input" placeholder="Message us" required ></textarea><br>
+                    <button>Submit</button>
+                </form>
+            </div>
+            <div id="footer">
+                <p class="footer-str">${Data[1].devName}</p>
+                <p class="footer-str">${Data[1].loaction}</p>
+                <p class="footer-str">${Data[1].email}</p>
+                <p class="footer-str">${Data[1].copyRights}</p>
+            </div>
+
             <button id="first-btn">See more</button>
         </div>
     `;
 
     let count = 0;
     const firstBtn = document.getElementById('first-btn');
+    //expriences
     const divTwo = document.getElementById('div2');
+    //skills
     const divSkills = document.querySelectorAll('.Skills');
+    //contact
+    const contact = document.getElementById('contact-me');
+    //Footer
+    const footer = document.getElementById('footer');
 
     firstBtn.addEventListener('click', function () {
         divTwo.style.display = 'block';
@@ -103,8 +125,16 @@ export function secondPage() {
         } else if (count === 2) {
             divSkills.forEach(skill => skill.style.display = 'block'); // Fix NodeList manipulation
             divSkills[0].scrollIntoView({ behavior: 'smooth' });
-            firstBtn.innerText = "View Design";
-        } else if (count > 2) {
+            firstBtn.innerText = "Add Contact";
+        }else if(count === 3){
+            contact.style.display = 'block';
+            contact.scrollIntoView({ behavior: 'smooth' });
+            firstBtn.innerText = "Add Footer";
+        }else if(count === 4){
+            footer.style.display = 'block';
+            footer.scrollIntoView({ behavior: 'smooth' });
+            firstBtn.innerText = "Add Design";
+        }else if (count > 4) {
             const mainPage = document.getElementById('main-wrapper');
             mainPage.style.display = 'block';
             secondPage.style.display = 'none';
@@ -113,6 +143,7 @@ export function secondPage() {
         }
         console.log(count);
     });
+    
 }
 
 
